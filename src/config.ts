@@ -35,7 +35,8 @@ const styleLoader = (isModule: boolean = false) => {
                         publicPath: '../../'
                     }
                 },
-                cssLoader
+                cssLoader,
+                "postcss-loader"
             ] :
             [
                 "style-loader",
