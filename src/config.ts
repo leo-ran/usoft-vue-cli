@@ -169,7 +169,7 @@ let config: Configuration = {
         path: path.resolve("dist"),
         filename: `assets/js/[name].js`,
         libraryTarget: 'umd',
-        publicPath: "./"
+        publicPath: "/"
     },
     plugins: [
         new VueLoaderPlugin(),

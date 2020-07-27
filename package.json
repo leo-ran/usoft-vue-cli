@@ -1,6 +1,6 @@
 {
   "name": "@usoft-fe/vue-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Chongqing ©USoft front-end vue-cli.",
   "main": "./dist/index.js",
   "bin": {
