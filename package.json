@@ -1,6 +1,6 @@
 {
   "name": "@usoft-fe/vue-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Chongqing ©USoft front-end vue-cli.",
   "main": "./dist/index.js",
   "bin": {
@@ -9,8 +9,8 @@
   "scripts": {
     "dist": "node ./clear.js & tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["usoft"],
+  "author": "ranyunlong",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.10.5",

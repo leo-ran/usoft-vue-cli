@@ -52,7 +52,7 @@ const lessLoaderOption: RuleSetUseItem = {
 const sassLoaderOption: RuleSetUseItem = {
     loader: "sass-loader",
     options: {
-        implementation: require('sass'),
+        // implementation: require('sass'),
         sourceMap: false,
     }
 }
