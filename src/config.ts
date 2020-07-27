@@ -35,8 +35,7 @@ const styleLoader = (isModule: boolean = false) => {
                         publicPath: '../../'
                     }
                 },
-                cssLoader,
-                "postcss-loader"
+                cssLoader
             ] :
             [
                 "style-loader",
@@ -227,6 +226,7 @@ function createLessConfig(lessLoaderOption: RuleSetUseItem) {
             use: [
                 ...styleLoader(),
                 lessLoaderOption,
+                "postcss-loader",
             ]
         },
         {
