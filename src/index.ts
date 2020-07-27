@@ -3,6 +3,7 @@ import webpack from "webpack";
 import webpackHotMiddleware from "webpack-hot-middleware";
 import WebpackDevServer from "webpack-dev-server";
 import {webpackConfigs} from "./config";
+import history from "connect-history-api-fallback";
 
 import {Logo} from "./sources";
 
@@ -41,6 +42,7 @@ export function start() {
         const server = new WebpackDevServer(compiler, {
             ...webpackConfigs.devServer,
             before (app) {
+                app.use(history());
                 app.use(webpackHotMiddleware(compiler,{
                     log: false,
                     path: "/__what",
