@@ -286,7 +286,7 @@ if (fs.existsSync(restConfigFilePath)) {
         }
 
         if (typeof _config.sass === "function") {
-            sassConfig = _config.sass(lessLoaderOption)
+            sassConfig = _config.sass(sassLoaderOption)
         }
 
 
