@@ -35,11 +35,13 @@ const styleLoader = (isModule: boolean = false) => {
                         publicPath: '../../'
                     }
                 },
-                cssLoader
+                cssLoader,
+                "postcss-loader",
             ] :
             [
                 "style-loader",
-                cssLoader
+                cssLoader,
+                "postcss-loader",
             ]
     );
 };
@@ -67,6 +69,7 @@ const devServerOption: DevServerConfiguration = {
     port: 3000,
     open: true,
     stats: isProduction ? "normal" : "errors-warnings",
+    historyApiFallback: true
 }
 
 
@@ -225,8 +228,7 @@ function createLessConfig(lessLoaderOption: RuleSetUseItem) {
             test: /\.less$/,
             use: [
                 ...styleLoader(),
-                lessLoaderOption,
-                "postcss-loader",
+                lessLoaderOption
             ]
         },
         {
