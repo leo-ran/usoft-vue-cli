@@ -124,7 +124,7 @@ let config: Configuration = {
                     loader: "file-loader",
                     options: {
                         limit: 10000,
-                        name: isProduction ? "/assets/images/[name].[ext]" : "/assets/images/[name].[hash:7].[ext]",
+                        name: isProduction ? "assets/images/[name].[ext]" : "assets/images/[name].[hash:7].[ext]",
                         esModule: false,
                     }
                 }: {
@@ -140,7 +140,7 @@ let config: Configuration = {
                     loader: "file-loader",
                     options: {
                         limit: 10000,
-                        name: isProduction ? "/assets/medias/[name].[ext]" : "/assets/medias/[name].[hash:7].[ext]",
+                        name: isProduction ? "assets/medias/[name].[ext]" : "assets/medias/[name].[hash:7].[ext]",
                         esModule: false,
                     }
                 }: {
@@ -156,7 +156,7 @@ let config: Configuration = {
                     loader: "file-loader",
                     options: {
                         limit: 10000,
-                        name: isProduction ? "/assets/fonts/[name].[ext]" : "/assets/fonts/[name].[hash:7].[ext]",
+                        name: isProduction ? "assets/fonts/[name].[ext]" : "assets/fonts/[name].[hash:7].[ext]",
                         esModule: false,
                     }
                 }: {
